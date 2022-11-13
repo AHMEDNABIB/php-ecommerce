@@ -15,7 +15,7 @@ class DbController{
             echo "fail" . $this->conn->connect_error;
         }
 
-        echo "connection completed";
+      
     }
 
      public function __destruct()
