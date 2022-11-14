@@ -2,11 +2,7 @@
 include "header.php";
 ?>
 
-  <!-- Owl-carousel -->
-           <?php
-           include 'Template/_banner-area.php';
-           ?>
-   <!-- !Owl-carousel -->
+ 
 
       <?php
         include 'Template/_product.php';
