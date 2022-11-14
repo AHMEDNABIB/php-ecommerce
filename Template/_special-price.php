@@ -5,6 +5,7 @@
 
  $unique = array_unique($brand);
  sort($unique);
+ shuffle($product_shuffle);
 //  print_r($unique);
  ?>
  
