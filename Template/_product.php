@@ -1,8 +1,16 @@
- <section id="product" class="py-3">
+
+<?php
+   $item_id = $_GET['item_id']??1;
+
+   foreach ($product->getData()as $item):
+       if ($item['item_id']==$item_id):
+?>
+
+<section id="product" class="py-3">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
-                            <img src="assets/products/1.png" alt="product" class="img-fluid">
+                            <img src="<?php echo $item['item_image']?>" alt="product" class="img-fluid">
                             <div class="form-row pt-4 font-size-16 font-baloo">
                                 <div class="col">
                                     <button type="submit" class="btn btn-danger form-control">Proceed to Buy</button>
@@ -134,3 +142,8 @@
                     </div>
                 </div>
             </section>
+
+       <?php
+       endif;
+   endforeach;
+?>
